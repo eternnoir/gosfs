@@ -13,6 +13,8 @@ var (
 	path = flag.String("path", "./", "The root path where want to serve.")
 )
 
+const VERSION = "0.1"
+
 func main() {
 	flag.Parse()
 	rootPath, err := filepath.Abs(*path)
